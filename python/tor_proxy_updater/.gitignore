@@ -1,0 +1,5 @@
+*_key.txt
+config.json
+
+*.session
+# config.py

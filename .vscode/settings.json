@@ -1,0 +1,32 @@
+{
+    "dotnet.defaultSolution": "cs\\WinUtils\\WinUtils.sln",
+
+    "editor.detectIndentation": false,
+    "workbench.tree.indent": 14,
+    "files.associations": {
+        "**/apache2/**/*.conf":  "apacheconf",
+        "**/nginx/**/*.conf":  "nginx",
+        "ssh_config*":  "ssh_config",
+        "sshd_config*": "ssh_config",
+        "pw.json": "jsonc",
+        "*.json.dist": "jsonc",
+        "*id_rsa": "plaintext",
+        "*id_rsa.pub": "plaintext",
+        "Folder.DotSettings.user": "xml",
+    },
+    "files.eol": "\n",
+    "html.format.enable": true,
+    "html.format.wrapLineLength": 240,
+
+    "prettier.printWidth": 240,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+
+    // "php.validate.executablePath": "/usr/bin/php7.4"
+    "php.debug.executablePath": "C:\\xampp\\php\\php.exe",
+    "php.version": "v7.4",
+
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    }
+}

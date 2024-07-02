@@ -1,0 +1,99 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${fileDirname}",
+            "name": "Bash :: Debug",
+            "program": "${file}",
+            "request": "launch",
+            "type": "bashdb",
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": "C# :: Current Project (.csproj file)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet-build-current",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${fileDirname}/bin/Debug/net8.0/${fileBasenameNoExtension}.dll",
+            "args": [],
+            "cwd": "${fileDirname}",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "C# :: .NET Script Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "windows": {
+                "args": [
+                    "exec",
+                    "${env:USERPROFILE}/.dotnet/tools/.store/dotnet-script/1.4.0/dotnet-script/1.4.0/tools/net7.0/any/dotnet-script.dll",
+                    "${file}"
+                ],
+            },
+            "linux": {
+                "args": [
+                    "exec",
+                    "/home/${env:USER}/.dotnet/tools/.store/dotnet-script/1.4.0/dotnet-script/1.4.0/tools/net7.0/any/dotnet-script.dll",
+                    "${file}"
+                ],
+            },
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false
+        },
+        {
+            "console": "integratedTerminal",
+            "name": "Node.js :: Launch Current File",
+            "program": "${file}",
+            "request": "launch",
+            "type": "node",
+        },
+        {
+            "name": "PHP :: Launch current script in console",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "externalConsole": false,
+            "port": 9003
+        },
+        {
+            "name": "PHP :: Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": [
+                9003,
+                9000
+            ]
+        },
+        {
+            "cwd": "${file}",
+            "name": "PowerShell :: Launch Current File",
+            "request": "launch",
+            "script": "${file}",
+            "type": "PowerShell",
+        },
+        {
+            "console": "integratedTerminal",
+            "name": "Python: Current File",
+            "program": "${file}",
+            "request": "launch",
+            "type": "debugpy",
+            "justMyCode": false
+        },
+        {
+            "type": "ruby_lsp",
+            "request": "launch",
+            "name": "Ruby :: Debug program",
+            "program": "ruby"
+        },
+    ]
+}

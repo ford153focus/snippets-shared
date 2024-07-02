@@ -1,0 +1,5 @@
+nest_asyncio
+
+# https://docs.pyrogram.org/intro/install
+pyrogram
+tgcrypto

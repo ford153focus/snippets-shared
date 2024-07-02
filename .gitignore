@@ -1,0 +1,28 @@
+node_modules
+
+#eclipse
+/.settings/
+/.project
+/.buildpath
+
+# JetBrains Rider
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+cs/**/bin
+cs/**/obj
+
+cfg/home/.config/mpv/mpv.conf
+
+__pycache__
+
+/tmp/auchan/auchan_result.html
+
+/rust/**/target
